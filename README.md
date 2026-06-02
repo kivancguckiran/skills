@@ -1,10 +1,10 @@
-# Codex Skills
+# Skills
 
-Reusable Codex skills for practical development and Markdown knowledge-work workflows.
+Reusable agent skills for practical development and Markdown knowledge-work workflows.
 
 This repository intentionally starts with a small public core: skills that are useful across projects without exposing private repository structure or higher-value authoring methods.
 
-## Skills
+---
 
 | Skill | Use when |
 | --- | --- |
@@ -36,6 +36,8 @@ skills/
 
 ## Install
 
+### Codex
+
 Clone this repository and copy the desired skill folder into your Codex skills directory:
 
 ```bash
@@ -45,15 +47,15 @@ cp -R skills/contract-first-monorepo "${CODEX_HOME:-$HOME/.codex}/skills/"
 
 Repeat for any other skill you want to install, then restart Codex so the new skills are discovered.
 
-## Claude Code
+### Claude
 
-These skills can also be used by Claude Code directly. Claude Code discovers project skills from:
+Claude discovers project skills from:
 
 ```text
 .claude/skills/<skill-name>/SKILL.md
 ```
 
-To use one of these skills with Claude Code, copy the whole skill folder into your Claude skills directory:
+To use one of these skills with Claude, copy the whole skill folder into your Claude skills directory:
 
 ```bash
 mkdir -p "$HOME/.claude/skills"
@@ -62,7 +64,7 @@ cp -R skills/wiki-markdown-pdf "$HOME/.claude/skills/"
 
 Copy the whole folder, not only `SKILL.md`, because some skills also need bundled `scripts/` and `references/`.
 
-Claude Code does not need an `agents/claude.yaml` sidecar for normal skill discovery. It reads the YAML frontmatter in `SKILL.md`; the existing `agents/openai.yaml` files are Codex/OpenAI-specific interface metadata.
+Claude does not need an `agents/claude.yaml` sidecar for normal skill discovery. It reads the YAML frontmatter in `SKILL.md`; the existing `agents/openai.yaml` files are optional OpenAI interface metadata.
 
 ## Requirements
 
