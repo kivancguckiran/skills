@@ -1,0 +1,7 @@
+interface:
+  display_name: "Contract-First Monorepo"
+  short_description: "Guide contract-first TypeScript monorepo changes."
+  default_prompt: "Implement this API or schema change through shared contracts, backend, clients, and targeted verification."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wiki Markdown PDF"
+  short_description: "Build styled PDFs from Markdown files."
+  default_prompt: "Build a styled PDF from this Markdown file using the repository's existing PDF workflow when available."

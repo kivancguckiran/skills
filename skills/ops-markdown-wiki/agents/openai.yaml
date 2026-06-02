@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ops Markdown Wiki"
+  short_description: "Maintain operational Markdown knowledge bases"
+  default_prompt: "Turn this operational note into linked Markdown records, append-only log entries, and dashboard updates when the repository uses them."
+
+policy:
+  allow_implicit_invocation: true

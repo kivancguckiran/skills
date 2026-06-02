@@ -1,0 +1,4 @@
+interface:
+  display_name: "PDF Page Extract"
+  short_description: "Extract page ranges from one PDF into a new PDF."
+  default_prompt: "Extract the requested original PDF pages into a new PDF, verify the page range, and save the output with a clear name."
