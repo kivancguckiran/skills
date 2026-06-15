@@ -23,13 +23,14 @@
 
 Use the bundled `scripts/build_pdf.sh` pattern:
 
-- Place script under repo `scripts/`.
-- Place CSS at `tools/pdf-style.css` unless a more local output style already exists.
+- Place `scripts/build_pdf.sh` and `scripts/markdown_to_pdf.py` under repo `scripts/`.
+- Prefer the browser-free ReportLab renderer for new projects.
 - Keep output beside source Markdown by default.
 
 ## Common Failures
 
-- Chrome missing or not executable.
-- `pandoc` missing.
-- CSS path wrong after moving the script.
+- `PYTHON_BIN` points to a Python without `reportlab`.
+- The Codex bundled Python path differs on another machine; set `PYTHON_BIN` explicitly.
 - Running from the wrong repo root.
+- Complex Markdown extensions are not supported by the simple renderer. For those files, preprocess to simpler Markdown or use the repo's existing Pandoc workflow.
+- Images are not yet rendered by the simple script; use an existing repo workflow if image fidelity is required.
